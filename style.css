@@ -92,20 +92,61 @@ h1:hover{
 .product-cards{
     height:360px;
     width:250px;
-    background-color: rgb(85, 113, 138);
+    background-color: rgba(225, 78, 62, 0.966);
     border:2px solid rgb(202, 201, 201);
     border-radius: 15px;
     box-shadow: 2px 2px 10px rgb(130, 6, 6);
     position: relative;
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 .product-cards:hover{
     transform: scale(1.05);
-    background-color: rgb(90, 126, 157);
+    background-color: rgb(207, 57, 28);
     border:2px solid rgb(239, 176, 176);
     border-radius: 15px;
     box-shadow: 2px 2px 15px rgb(130, 6, 6);
 }
+
+.product-cards img{
+    width: 247px;
+    height: 255px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom: 2px solid black;
+}
+
 .product-cards:focus{
     text-decoration: underline;
+}
+
+.product-cards h2{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+}
+.product-cards .P-body{
+
+    padding: 0 10px 5px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: justify;
+    color: rgb(11, 23, 40);
+}
+.product-cards h2:hover{
+    text-decoration: underline;
+    transition: 0.4s ease-out;
+
+}
+.product-cards .P-body:hover{
+    text-decoration: underline;
+    color: rgb(2, 2, 225);
+    transition: 0.3s ease-in;
+    font-weight: 550;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
