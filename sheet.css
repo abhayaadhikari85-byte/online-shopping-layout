@@ -1,0 +1,165 @@
+
+
+
+* {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 450;
+    padding:0;
+
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container {
+    background-color: rgba(215, 58, 94, 0.915);
+    height: 425px;
+    width: 370px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.container:hover{
+    transform: scale(1.02);
+    transition: 0.3s ease-out;
+}
+.register {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.container h1 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: azure;
+    margin-bottom: 40px;
+    padding: 0%;
+}
+.name{
+    margin: 10px 0 30px 0;
+    display: flex;
+    justify-content: center;
+}
+.pass{
+    margin: 0 0 17px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.name input, .pass input {
+    width: 370px;
+    border: 0px;
+    border-radius:18px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: rgb(67, 72, 77);
+    padding-left:20px;
+    outline: none;
+    position: static;
+    border: 2px solid rgb(124, 121, 121);
+    box-sizing: border-box;
+    box-shadow: none;
+}
+.name input:hover, .pass input:hover {
+    border: 2px solid black;
+} 
+.name input:focus, .pass input:focus {
+    border: 2px solid black;
+} 
+
+.more{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+.more .rem, .forgot {
+    font-size: 15px;
+    color: rgb(43, 43, 43);
+    padding: 0 20px;
+    margin-top: 0;
+    display:flex;
+    align-items: center;
+}
+.rem-txt{
+    font-size: 15px;
+    color: rgb(43, 43, 43);
+    padding: 0 4px;
+    margin-top: 0;
+    display:flex;
+    align-items: center;
+}
+.remember {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    background: transparent;
+    cursor: pointer;
+    margin-right: 6px;
+    position: relative;
+}
+
+.remember:checked {
+    background: transparent;
+    border-color: rgb(0, 0, 0);
+}
+
+.remember:checked::after {
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 0px;
+    width: 4px;
+    height: 8px;
+    border: solid rgb(0, 0, 0);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.rem-txt:hover, .forgot:hover {
+    color: black;
+}
+.login{
+
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: smaller;
+}
+.login button{
+    margin-top: 10px;
+    appearance: none;
+    background: linear-gradient(90deg, rgba(7, 241, 93, 0.856), rgba(18, 255, 176, 0.785));
+    border: none;
+    width: 370px;
+    border-radius:18px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    color: black;
+    box-sizing: border-box;
+    border: 1px transparent;
+    transition: 3sec ease-in;
+}
+.login :hover{
+    background: linear-gradient(90deg, rgb(6, 224, 86), rgba(18, 255, 176, 0.89));
+    border: 1px solid black;
+    
+}
+.footer {
+    margin-top: 50px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
